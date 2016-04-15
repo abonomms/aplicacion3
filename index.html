@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+<style>
+p
+{
+	border-color:black;
+	border-width:20px;
+}
+p.none{border-style:none;}
+p.dotted{border-style:dotted;}
+p.dashed{border-style:dashed;}
+p.solid{border-style:solid;}
+p.double{border-style:double;}
+p.groove{border-style:groove;}
+p.ridge{border-style:ridge;}
+p.inset{border-style:inset;}
+p.outset{border-style:outset;}
+p.hidden{border-style:hidden;}
+</style>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/actividad.jpg')">
+
+<div data-role="page" id="Principal" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="c">
+<h1>POPOCATEPETL </h1>
+</div>
+<div data-role="main" class="ui-content" >
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:640px;height:245px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+</div>
+<br><br>
+<div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>POPOCATEPETL<br>
+Información sobre el volvan popocatepetl</h1>
+<div>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>*Ubicación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>*Dimensión</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>DEPENDENCIAS DE MONITOREO</h1>
+<div>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>*CENAPRED</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>MEDIDAS PREVENTIVAS</h1>
+<div>
+<h4>En caso de alguna erupción volcanica:</h4></div>
+<div>
+  Consejos de seguridad: <br>
+    Mantente alejado de volcanes activos.
+  <br>Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+  <br>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.   <img src="imagenes/alerta.jpg" align="left">
+  <br>Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+    Evita zonas de ríos y regiones bajas.
+  <br>
+    Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+  <br>Si no vas a evacuar, cierra puertas y ventanas, y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+  <br>Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/actividad.jpg',1)"><img src="imagenes/medidas.jpg" width="400" height="225" id="Image8"></a>
+<br>La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.
+</div>
+</div>
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>VOLCAN DE FUEGO<br>Informacion sobre el volcan de colima.</h1>
+<div>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>*Ubicación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>*Dimensión</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div data-role="footer" align="center" data-theme="c">
+  <div>
+  <h4> <strong>Aplicacion 3 <br>"Volcan Popocatepetl" </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+  <h1>NOMBRE</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  El Popocatépetl (“montaña que humea”) es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 55 km al sureste de la Ciudad de México.
+  <p class="double"><img src="imagenes/ubip.gif" aling="center"></p>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="c" align="center">
+  <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+  <h1>FECHA DE NACIMIENTO</h1>
+ </div>
+<div data-role="content" align="center">
+ <div>
+ El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México.
+ <p class="double"><img src="imagenes/ubic.jpg" aling="center"></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="c" align="center">
+ <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>Dimención</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+   <p>El Popocatépetl es un volcán de forma cónica simétrica; está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altura máxima de 5.500 metros sobre el nivel del mar, sólo después del Citlaltépetl (Pico de Orizaba) con 5.610 metros.</p>
+   <p ><img src="imagenes/dimpo.jpg" aling="center"></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="c" align="center">
+ <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>Dimención</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+   <p>El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos. </p>
+   <p><img src="imagenes/dimco.jpg" aling="center"></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="c" align="center">
+ <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>CENAPRED</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ La responsabilidad principal del Centro Nacional de Prevención de Desastres (CENAPRED) consiste en apoyar al Sistema Nacional de Protección Civil (SINAPROC) en los requerimientos técnicos que su operación demanda. 
+
+<P>Realiza actividades de investigación, capacitación, instrumentación y difusión acerca de fenómenos naturales y antropogénicos que pueden originar situaciones de desastre, así como acciones para reducir y mitigar los efectos negativos de tales fenómenos, para coadyuvar a una mejor preparación de la población para enfrentarlos.</P>
+<a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/" target="_self"><img src="imagenes/cenapred.png" width="300" height="150" ></a>
+<table width="300" align="center">
+<tr>
+<td>
+<font size="-1">Para mas informacion clic en la imagen.<img src="imagenes/manita.png"></font>
+</td>
+</tr>
+</table>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="c" align="center">
+ <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+  <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>DOMICILIO</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2> Col. Revolucion, calle 10 de Marzo No #10 </h2></div>
+ </div>
+ <div data-role="footer" data-theme="c" align="center">
+ <div>
+  <h4> <strong>Aplicacion 3 Volcan Popocatepetl </strong></h4>
+  </div>
+  <div>
+  <P>RSC</P>
+  </div>
+ </div>
+ </div>
+ </div>
+ </body>
+ </html>
